@@ -1,0 +1,390 @@
+/* ==========================
+   AK POWER SOLUTIONS
+   Professional Style Sheet
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F5F3E7;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Header */
+header{
+    background:#556B2F;
+    color:white;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin-right:15px;
+}
+
+.logo h2{
+    color:#C62828;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#FFD54F;
+}
+
+/* Hero Section */
+.hero{
+    background:
+    linear-gradient(rgba(85,107,47,.85), rgba(85,107,47,.85)),
+    url('../images/background.jpg');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    color:white;
+    padding:120px 20px;
+}
+
+.hero-logo{
+    width:300px;
+    max-width:90%;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:#FFFFFF;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    color:#E8F5E9;
+    margin-bottom:30px;
+}
+
+.hero-buttons .btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#C62828;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.hero-buttons .btn:hover{
+    background:#8E0000;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+}
+
+.btn-whatsapp:hover{
+    background:#1ebc57;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+section h2{
+    color:#556B2F;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+/* Service Cards */
+.service-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.service-card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    border-top:5px solid #C62828;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card h3{
+    color:#556B2F;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#666;
+}
+
+/* About */
+#about{
+    background:#FFFDF5;
+}
+
+/* Gallery */
+.gallery-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery-container img{
+    width:300px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+/* Testimonials */
+.testimonial-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.testimonial-card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.testimonial-card h4{
+    color:#C62828;
+}
+
+/* Contact Section */
+#contact{
+    background:#556B2F;
+    color:white;
+}
+
+.contact-form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+.contact-form button{
+    background:#C62828;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#8E0000;
+}
+
+iframe{
+    border-radius:15px;
+}
+
+/* Footer */
+footer{
+    background:#3D4E1E;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.social-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:60px;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.whatsapp-float:hover{
+    background:#1ebc57;
+}
+
+/* Back To Top */
+#topBtn{
+    position:fixed;
+    bottom:95px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#C62828;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Slider */
+.slider{
+    max-width:100%;
+    overflow:hidden;
+}
+
+.slides img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+/* Scroll Animation */
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Dark Mode */
+.dark-mode{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark-mode section{
+    background:#1f1f1f;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p{
+    color:white;
+}
+
+/* Mobile Menu */
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#556B2F;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:20px 0;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero-logo{
+        width:200px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+}
