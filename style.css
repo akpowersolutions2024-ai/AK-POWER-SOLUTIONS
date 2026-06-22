@@ -388,3 +388,27 @@ footer{
         padding:60px 5%;
     }
 }
+/* Dark Mode */
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#121212;
+}
+
+.dark-mode .service-card,
+.dark-mode .card,
+.dark-mode footer{
+    background:#1b4332;
+    color:white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a{
+    color:white;
+}
