@@ -137,11 +137,11 @@ section h2{
 }
 
 /* Service Cards */
-.service-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* This is the secret to mobile responsiveness */
+  gap: 20px;       /* Adds space between your service boxes */
+  justify-content: center;
 }
 
 .service-card{
@@ -411,4 +411,9 @@ footer{
 .dark-mode p,
 .dark-mode a{
     color:white;
+}
+
+img{
+   max-width: 100%;
+   height: auto;
 }
